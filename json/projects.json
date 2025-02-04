@@ -1,5 +1,11 @@
 [
     {
+        "title": "VSCode Spotify Controller Extension",
+        "content": "Developed a VSCode extension that allows you to control your Spotify music player from the editor itself.",
+        "stack": "TypeScript, React, Spotify API, VSCode API, OAuth2",
+        "repo": "https://github.com/Vidyut01/Vscode-Spotify-Player"
+    },
+    {
         "title": "SUPERPRICE",
         "content": "Created a full stack grocery shopping website with a team of 5 members following an agile workflow.",
         "stack": "Spring-Boot, React, Docker, NodeJS, AWS EC2, AWS ECR, REST APIs, MySQL",
