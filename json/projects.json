@@ -2,25 +2,25 @@
     {
         "title": "VSCode Spotify Controller Extension",
         "content": "Developed a VSCode extension that allows you to control your Spotify music player from the editor itself.",
-        "stack": "TypeScript, React, Spotify API, VSCode API, OAuth2",
+        "stack": ["TypeScript", "React", "Spotify API", "VSCode API", "OAuth2"],
         "repo": "https://github.com/Vidyut01/Vscode-Spotify-Player"
     },
     {
         "title": "SUPERPRICE",
         "content": "Created a full stack grocery shopping website with a team of 5 members following an agile workflow.",
-        "stack": "Spring-Boot, React, Docker, NodeJS, AWS EC2, AWS ECR, REST APIs, MySQL",
+        "stack": ["Spring-Boot", "React", "Docker", "NodeJS", "AWS EC2", "AWS ECR", "REST APIs", "MySQL"],
         "repo": "https://github.com/Vidyut03/Superprice"
     },
     {
         "title": "Music Subscription Website using Serverless Backend",
         "content": "Built a site to query and subscribe to different music artists using a serverless backend.",
-        "stack": "React, AWS EC2, DynamoDB, AWS Lambda, AWS S3, Apache2, TailwindCSS",
+        "stack": ["React", "AWS EC2", "DynamoDB", "AWS Lambda", "AWS S3", "Apache2", "TailwindCSS"],
         "repo": ""
     },
     {
         "title": "Full Stack Todo Web App",
         "content": "Made a fully fuctional full stack website that allows you to create an account and add different task to it which can be accessed from any device by logging in.",
-        "stack": "Django, SQLite3, Nginx",
+        "stack": ["Django", "SQLite3", "Nginx"],
         "repo": "https://github.com/Vidyut01/TodoApp"
     }
 ]

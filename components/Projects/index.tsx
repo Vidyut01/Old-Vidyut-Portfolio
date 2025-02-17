@@ -1,10 +1,31 @@
+'use client'
+
 import React from 'react'
 
 import { AiFillGithub } from 'react-icons/ai';
 import ResumeCard from '^/ResumeCard'
+import { motion } from 'framer-motion';
 
 import projects from '@/json/projects.json';
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+      opacity: 1,
+      transition: {
+      staggerChildren: 0.2,
+      },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  show: { 
+      opacity: 1, 
+      scale: 1,
+      transition: { type: "spring", stiffness: 100 }
+  },
+};
 
 const Projects = () => {
   return (
@@ -13,16 +34,33 @@ const Projects = () => {
         <ResumeCard
             key={i}
             title={e.title}
+            className={`${e.repo && 'cursor-pointer'}`}
+            onClick={() => e.repo && window.open(e.repo)}
         >
             <div className="text-xl">
-            {e.content}
+              {e.content}
             </div>
             <br/>
-            <div className="text-lg italic">
-            <b>Technologies Used:</b> {e.stack}
-            </div>
-            <br/>
-            {e.repo && <a href={e.repo}><AiFillGithub size={35} /></a>}
+            <motion.div
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 0.3, once: true }}
+              variants={containerVariants}
+              className='flex flex-wrap'
+            >
+              {e.stack.map((s, ind) =>
+                <motion.span
+                  key={ind}
+                  title={s}
+                  whileHover={{ scale: 1.1 }}
+                  className='border-2 border-[#32334ecb] bg-[#4c4d76cb] rounded-full p-2 mr-3 mb-2 flex gap-2 items-center duration-100 h-11'
+                  variants={itemVariants}
+                  >
+                  {s}
+                </motion.span>
+              )}
+            </motion.div>
+            {e.repo && <p className='mt-3 opacity-50 hover:underline w-fit'>Click to view on GitHub</p>}
         </ResumeCard>
         )}
     </div>
