@@ -55,7 +55,7 @@ export default function Home() {
       <Section
         id="projects"
         title="Projects"
-        className="lg:h-[1050px] -mb-20 lg:mb-0 section"
+        className="lg:h-[1100px] -mb-20 lg:mb-0 section"
       >
         <Projects />
       </Section>
