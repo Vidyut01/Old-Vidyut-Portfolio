@@ -7,6 +7,10 @@
                 "name": "Python"
             },
             {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png",
+                "name": "C"
+            },
+            {
                 "icon": "https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png",
                 "name": "C++"
             },
@@ -32,6 +36,10 @@
                 "name": "NodeJS"
             },
             {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/express.png",
+                "name": "Express"
+            },
+            {
                 "icon": "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png",
                 "name": "React"
             },
@@ -42,6 +50,10 @@
             {
                 "icon": "https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4",
                 "name": "Django"
+            },
+            {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png",
+                "name": "Spring Boot"
             },
             {
                 "icon": "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
@@ -73,6 +85,10 @@
     {
         "type": "Others",
         "skills": [
+            {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png",
+                "name": "Linux"
+            },
             {
                 "icon": "https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png",
                 "name": "AWS"
