@@ -65,7 +65,7 @@ export default function Home() {
       <Section
         id="skills"
         title="Skills"
-        className="lg:h-[55rem] -mb-20 lg:mb-0 section"
+        className="lg:h-[70rem] -mb-20 lg:mb-0 section"
         reverse
       >
         <Skills />

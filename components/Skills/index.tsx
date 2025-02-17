@@ -35,7 +35,7 @@ const Skills = () => {
                     whileInView="show"
                     viewport={{ amount: 0.3 }}
                     variants={containerVariants}
-                    className='bg-[#292a35b6] p-5 rounded-2xl'
+                    className='bg-[#292a35b6] p-5 rounded-2xl hover:bg-[#292a35] duration-200'
                 >
                 <h2 className='text-2xl'>{e.type}</h2><br/>
                 <div className='flex flex-wrap '>
