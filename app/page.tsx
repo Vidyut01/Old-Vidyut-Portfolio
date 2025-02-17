@@ -1,4 +1,5 @@
-import Image from "next/image";
+// Use Server Side Rendering (SSR)
+export const dynamic = 'force-dynamic';
 
 import { TbFileDownload } from "react-icons/tb";
 import Section from "^/Section";
