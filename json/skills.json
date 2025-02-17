@@ -1,6 +1,6 @@
 [
     {
-        "type": "Programming",
+        "type": "Programming Languages",
         "skills": [
             {
                 "icon": "https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png",
@@ -83,6 +83,27 @@
         ]
     },
     {
+        "type": "Data Analysis and Machine Learning",
+        "skills": [
+            {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/pandas.png",
+                "name": "Pandas"
+            },
+            {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/numpy.png",
+                "name": "Numpy"
+            },
+            {
+                "icon": "/skill-icons/Matplotlib_icon.svg",
+                "name": "Matplotlib"
+            },
+            {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tensorflow.png",
+                "name": "Tensorflow"
+            }
+        ]
+    },
+    {
         "type": "Others",
         "skills": [
             {
@@ -94,8 +115,8 @@
                 "name": "AWS"
             },
             {
-                "icon": "https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png",
-                "name": "Git"
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png",
+                "name": "Docker"
             },
             {
                 "icon": "https://user-images.githubusercontent.com/25181517/192107856-aa92c8b1-b615-47c3-9141-ed0d29a90239.png",
@@ -104,6 +125,10 @@
             {
                 "icon": "https://user-images.githubusercontent.com/25181517/192107858-fe19f043-c502-4009-8c47-476fc89718ad.png",
                 "name": "REST APIs"
+            },
+            {
+                "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/unity.png",
+                "name": "Unity"
             }
         ]
     }
