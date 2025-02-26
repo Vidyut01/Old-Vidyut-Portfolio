@@ -43,13 +43,14 @@ const Projects = () => {
             <br/>
             <div className='flex flex-wrap'>
               {e.stack.map((s, ind) =>
-                <span
+                <motion.span
                   key={ind}
                   title={s}
+                  whileHover={{ rotate: 3, y: -5, transition: { type: 'spring', stiffness: 500, duration: 0.08 } }}
                   className='text-sm border-2 border-[#32334ecb] bg-[#4c4d76cb] rounded-full p-2 mr-3 mb-2 flex gap-2 items-center duration-100 h-9 hover:scale-110'
                 >
                   {s}
-                </span>
+                </motion.span>
               )}
             </div>
             {e.repo && <p className='mt-3 opacity-50 hover:underline w-fit'>Click to view on GitHub</p>}

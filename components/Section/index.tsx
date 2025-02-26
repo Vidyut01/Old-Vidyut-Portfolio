@@ -36,7 +36,7 @@ const Section = ({id, title, children, className, reverse = false}: {
         <div className="flex flex-col items-center lg:w-[70%]">
           {children}
         </div>
-        {reverse && <div className={`text-5xl w-[30%] h-full border-l lg:grid justify-center pt-10 border-[#E6E6FA] hidden ${headingFont.className}`}>
+        {reverse && <div className={`pl-10 text-5xl w-[30%] h-full border-l lg:grid justify-center pt-10 border-[#E6E6FA] hidden ${headingFont.className}`}>
           {title}
         </div>}
       </motion.article>

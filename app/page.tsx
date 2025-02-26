@@ -12,6 +12,7 @@ import Contact from "^/Contact";
 import Header from "^/Header";
 
 import about from '@/json/about.json';
+import BackToTopButton from "^/BackToTop";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       
       <Section
         id="about"
-        title="About"
+        title="About Me"
         className="lg:h-96 section"
       >
         <p className="text-lg lg:text-[21px] lg:max-w-[80%] lg:text-justify">
@@ -55,7 +56,7 @@ export default function Home() {
       
       <Section
         id="projects"
-        title="Projects"
+        title="Featured Projects"
         className="lg:h-[1100px] -mb-20 lg:mb-0 section"
       >
         <Projects />
@@ -65,7 +66,7 @@ export default function Home() {
 
       <Section
         id="skills"
-        title="Skills"
+        title="Technical Skills"
         className="lg:h-[70rem] -mb-20 lg:mb-0 section"
         reverse
       >
@@ -86,13 +87,14 @@ export default function Home() {
       
       <Section
         id="contact"
-        title="Contact"
+        title="Get in Touch"
         className="lg:h-[30rem] section"
         reverse
       >
         <Contact />
       </Section>
       
+      <BackToTopButton />
     </div>
   );
 }

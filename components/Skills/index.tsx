@@ -4,24 +4,39 @@ import React from 'react'
 
 import skills from '@/json/skills.json';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
         transition: {
-        staggerChildren: 0.2,
+            staggerChildren: 0.15,
         },
     },
 };
   
-const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+const itemVariantsUp: Variants = {
+    hidden: { opacity: 0, scale: 0.8, rotate: 30, y: -25, filter: 'blur(2px)' },
     show: { 
         opacity: 1, 
         scale: 1,
-        transition: { type: "spring", stiffness: 100 }
+        y: 0,
+        rotate: 0,
+        filter: 'blur(0px)',
+        transition: { type: "spring", stiffness: 100, delayChildren: 0.2 }
+    },
+};
+
+const itemVariantsDown: Variants = {
+    hidden: { opacity: 0, scale: 0.8, rotate: -30, y: 25, filter: 'blur(2px)' },
+    show: { 
+        opacity: 1, 
+        scale: 1,
+        y: 0,
+        rotate: 0,
+        filter: 'blur(0px)',
+        transition: { type: "spring", stiffness: 100, delayChildren: 0.2 }
     },
 };
 
@@ -33,9 +48,9 @@ const Skills = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ amount: 0.3, once: true }}
+                    viewport={{ amount: 0.2, once: true }}
                     variants={containerVariants}
-                    className='bg-[#292a35b6] p-5 rounded-2xl hover:bg-[#292a35] duration-200'
+                    className='bg-[#292a35b6] p-5 rounded-2xl hover:bg-[#292a35] hover:scale-[1.01] duration-200'
                 >
                 <h2 className='text-2xl'>{e.type}</h2><br/>
                 <div className='flex flex-wrap '>
@@ -43,9 +58,9 @@ const Skills = () => {
                         <motion.span
                             key={ind}
                             title={s.name}
-                            whileHover={{ scale: 1.1 }}
+                            whileHover={{ rotate: 3, y: -5, transition: { type: 'spring', stiffness: 500, duration: 0.08 } }}
                             className='border-2 border-[#32334ecb] bg-[#4c4d76cb] rounded-full p-2 mr-3 mb-2 flex gap-2 items-center duration-100 h-11'
-                            variants={itemVariants}
+                            variants={ind & 1 ? itemVariantsUp : itemVariantsDown}
                         >
                             <Image
                                 src={s.icon}
