@@ -14,7 +14,7 @@ const ResumeCard = ({title, subtitle, duration, children, className, onClick = n
 }) => {    
   return (
     <div 
-      className={`w-full lg:p-5 mb-5 h-fit bg-[#292a35b6] p-5 rounded-2xl hover:bg-[#292a35] duration-200 ${className && className}`}
+      className={`w-full lg:p-5 mb-5 h-fit bg-[#292a35b6] p-5 rounded-2xl hover:bg-[#292a35] hover:scale-[1.01] duration-200 ${className && className}`}
       onClick={() => onClick && onClick()}
     >
       <Card.Body className='w-full'>
