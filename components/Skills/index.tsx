@@ -33,7 +33,7 @@ const Skills = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ amount: 0.3 }}
+                    viewport={{ amount: 0.3, once: true }}
                     variants={containerVariants}
                     className='bg-[#292a35b6] p-5 rounded-2xl hover:bg-[#292a35] duration-200'
                 >

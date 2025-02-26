@@ -41,25 +41,17 @@ const Projects = () => {
               {e.content}
             </div>
             <br/>
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ amount: 0.3, once: true }}
-              variants={containerVariants}
-              className='flex flex-wrap'
-            >
+            <div className='flex flex-wrap'>
               {e.stack.map((s, ind) =>
-                <motion.span
+                <span
                   key={ind}
                   title={s}
-                  whileHover={{ scale: 1.1 }}
-                  className='border-2 border-[#32334ecb] bg-[#4c4d76cb] rounded-full p-2 mr-3 mb-2 flex gap-2 items-center duration-100 h-11'
-                  variants={itemVariants}
-                  >
+                  className='text-sm border-2 border-[#32334ecb] bg-[#4c4d76cb] rounded-full p-2 mr-3 mb-2 flex gap-2 items-center duration-100 h-9 hover:scale-110'
+                >
                   {s}
-                </motion.span>
+                </span>
               )}
-            </motion.div>
+            </div>
             {e.repo && <p className='mt-3 opacity-50 hover:underline w-fit'>Click to view on GitHub</p>}
         </ResumeCard>
         )}
