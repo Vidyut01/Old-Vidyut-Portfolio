@@ -14,7 +14,7 @@
     "daisyui": "^4.12.10",
     "framer-motion": "^11.3.21",
     "hamburger-react": "^2.5.1",
-    "next": "14.2.4",
+    "next": "14.2.35",
     "portfolio": "file:",
     "react": "^18",
     "react-daisyui": "^5.0.0",
