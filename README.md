@@ -1,6 +1,6 @@
 # Vidyut Portfolio
 
-**Note:** This repository is outdated. I have completely remade my portfolio from scratch using an Astro architecture.
+**Note:** This repository is outdated. I have completely remade my portfolio from scratch using an Astro architecture.  
 **New Portfolio Repo** <https://github.com/Vidyut01/Vidyut-Portfolio>
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experience as a Software Engineer.
